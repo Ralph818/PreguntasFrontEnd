@@ -9,7 +9,11 @@ export const addTokenInterceptor: HttpInterceptorFn = (req: HttpRequest<any>, ne
   const router = inject(Router);
   const toastr = inject(ToastrService);
   
-  const token = localStorage.getItem('token');
+  var token = null;
+  if (typeof localStorage !== 'undefined') {
+    token = localStorage.getItem('token');
+  }
+  
   var authReq;
   console.log(token);
   if (token) {

@@ -21,11 +21,17 @@ export class LoginService {
    }
 
    setLocalStorage(data: any): void{
-    localStorage.setItem('token', data);
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('token', data);
+    }
    }
 
    getToken(): string | null{
-    return localStorage.getItem('token');
+    if (typeof localStorage !== 'undefined') {
+      return localStorage.getItem('token');
+    }
+    else
+      return null;
    }
 
    getTokenDecoded(): any{
@@ -36,6 +42,8 @@ export class LoginService {
    }
 
    removeLocalStorage(): void {
-    localStorage.removeItem('token');
+    if (typeof localStorage !== 'undefined') {
+      localStorage.removeItem('token');
+    }
    }
 }
