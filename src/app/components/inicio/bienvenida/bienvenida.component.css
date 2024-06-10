@@ -1,0 +1,37 @@
+p{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color:#CDD0D4
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+hr{
+    border-width: 5px;
+    max-width: 65px;
+    border-color: #f22602;
+    color: #f22602;
+    margin-left: 355px;
+}
+
+.btn-xl{
+    background-color: #F05F44;
+    border-color: #F05F44;
+    margin: 10px;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+}
+
+.btn-xl:hover{
+    background-color: #EE4B08;
+    border-radius: #EE4B08;
+    border-width: 4px;
+}

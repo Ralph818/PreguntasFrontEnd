@@ -1,0 +1,14 @@
+.table thead th{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+.delete-icon{
+    cursor: pointer;
+    color: #ce4b4b;
+}
+
+.search-icon{
+    cursor: pointer;
+    color: #133697;
+}
