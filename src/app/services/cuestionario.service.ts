@@ -15,7 +15,7 @@ export class CuestionarioService {
 
   constructor(private http: HttpClient) { 
 
-    this.myAppUrl = "http://localhost:33107";
+    this.myAppUrl = "https://ralph818-001-site1.etempurl.com";
     this.myApiUrl = "/api/Cuestionario/";
   }
 

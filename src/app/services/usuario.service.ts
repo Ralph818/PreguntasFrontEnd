@@ -13,7 +13,7 @@ export class UsuarioService {
   myApiUrl: string;
 
   constructor(private http: HttpClient) {
-    this.myAppUrl = "http://ralph818-001-site1.etempurl.com";
+    this.myAppUrl = "https://ralph818-001-site1.etempurl.com";
     this.myApiUrl = "/api/Usuario/";
    }
 
