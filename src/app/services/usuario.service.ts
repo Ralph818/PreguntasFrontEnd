@@ -13,8 +13,8 @@ export class UsuarioService {
   myApiUrl: string;
 
   constructor(private http: HttpClient) {
-    this.myAppUrl = "http://localhost:33107";
-    this.myApiUrl = "/api/Usuario/CambiarPassword";
+    this.myAppUrl = "http://ralph818-001-site1.etempurl.com";
+    this.myApiUrl = "/api/Usuario/";
    }
 
    // http://localhost:33107/api/Usuario  POST
@@ -23,6 +23,6 @@ export class UsuarioService {
   }
 
   changePassword(changePassword: any): Observable<any>{
-    return this.http.put(this.myAppUrl + this.myApiUrl, changePassword);
+    return this.http.put(this.myAppUrl + this.myApiUrl + "CambiarPassword", changePassword);
   }
 }

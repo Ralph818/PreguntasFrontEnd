@@ -12,7 +12,7 @@ export class LoginService {
   myApiUrl: string;
 
   constructor(private http: HttpClient) {
-    this.myAppUrl = "http://localhost:33107";
+    this.myAppUrl = "http://ralph818-001-site1.etempurl.com";
     this.myApiUrl = "/api/Login";
    }
 
